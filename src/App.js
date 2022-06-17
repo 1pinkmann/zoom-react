@@ -1,6 +1,6 @@
 import {
   BrowserRouter,
-  Routes,
+  Switch,
   Route,
 } from 'react-router-dom';
 import ConnectPage from './ConnectPage';
@@ -11,10 +11,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
+      <Switch>
         <Route path="/" element={<ConnectPage />} />
         <Route path="/cdn" element={<Zoom />} />
-      </Routes>
+      </Switch>
     </BrowserRouter>
   );
 }
